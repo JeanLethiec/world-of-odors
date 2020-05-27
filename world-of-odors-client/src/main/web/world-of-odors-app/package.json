@@ -4,13 +4,16 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --build-optimizer=false",
+    "install": "ng build --prod --build-optimizer=false --base-href \"/world-of-odors-app/\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
+    "@amcharts/amcharts4": "^4.9.23",
+    "@amcharts/amcharts4-geodata": "^4.1.15",
     "@angular/animations": "~9.1.9",
     "@angular/common": "~9.1.9",
     "@angular/compiler": "~9.1.9",
